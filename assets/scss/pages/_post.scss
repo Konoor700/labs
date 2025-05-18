@@ -1,0 +1,32 @@
+.blog-post {
+    padding: 20px;
+    background-color: #fff; 
+    border: 1px solid $light-gray; 
+
+    .blog-post-title {
+        color: $primary-color; 
+        margin-bottom: 0.5rem;
+    }
+
+    .blog-post-meta {
+        color: $dark-gray; 
+        font-size: 0.9em;
+        margin-bottom: 1.5rem;
+    }
+
+    hr {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    blockquote {
+        border-left: 5px solid $primary-color; 
+        margin-left: 0;
+        padding-left: 1.5rem;
+        color: $dark-gray;
+
+        p {
+            font-style: italic;
+        }
+    }
+}
