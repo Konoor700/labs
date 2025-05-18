@@ -1,39 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Website</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 50px;
-            background-color: #f4f4f4;
-        }
-        button {
-            padding: 10px 20px;
-            font-size: 16px;
-            background-color: blue;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: darkblue;
-        }
-    </style>
+    <title>Мій Перший Блог</title>
+    <link rel="stylesheet" href="style.css"> <!-- Підключення CSS -->
 </head>
 <body>
-    <h1>Вітаю на мому простому сайті.</h1>
-    <p>Нажміть на кнопку для зміни кольору.</p>
-    <button onclick="changeColor()">Змінити колір</button>
-    
-    <script>
-        function changeColor() {
-            const colors = ["#ff9999", "#99ff99", "#9999ff", "#ffff99", "#ffccff"];
-            document.body.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
-        }
-    </script>
+    <header>
+        <h1>Ласкаво просимо до мого блогу!</h1>
+        <nav>
+            <a href="index.html">Головна</a>
+            <a href="about.html">Про мене</a>
+            <!-- Додайте посилання на пости, коли вони будуть -->
+        </nav>
+    </header>
+    <main>
+        <h2>Останні пости</h2>
+        <article>
+            <h3><a href="posts/post1.html">Мій перший пост</a></h3>
+            <p>Короткий опис першого поста...</p>
+        </article>
+        <article>
+            <h3><a href="posts/post2.html">Другий пост про щось цікаве</a></h3>
+            <p>Короткий опис другого поста...</p>
+        </article>
+        <!-- Додайте більше постів за аналогією -->
+    </main>
+    <footer>
+        <p>© 2025 Седлінська Аліна</p>
+    </footer>
 </body>
 </html>
