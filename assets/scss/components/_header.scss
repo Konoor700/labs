@@ -1,20 +1,20 @@
-// Перевизначення стилів для .top-bar з Foundation
+
 .top-bar {
-    background-color: $primary-color; // Ваша SASS-змінна
+    background-color: $primary-color;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
 
     .menu-text {
-        color: white; // Ваша SASS-змінна
+        color: white; 
         font-weight: bold;
     }
 
     .menu > li > a {
-        color: #f1f1f1; // Ваша SASS-змінна
+        color: #f1f1f1;
         font-size: 0.9rem;
 
         &:hover {
-            color: $secondary-color; // Ваша SASS-змінна
+            color: $secondary-color; 
             background-color: darken($primary-color, 10%);
         }
     }

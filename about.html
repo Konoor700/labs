@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Мета-теги -->
+    <title>Про мене - Аліна Седлінська | Мій Перший Блог на Foundation</title>
+    <meta name="description" content="Дізнайтеся більше про Аліну Седлінську, авторку цього блогу. Мої інтереси, досвід у веб-розробці та пристрасть до технологій і подорожей.">
+    <meta name="keywords" content="про мене, Аліна Седлінська, автор блогу, веб-розробка, технології, подорожі, біографія">
+    <meta name="robots" content="index, follow">
+    <!-- <meta name="google-site-verification" content="ВАШ_КОД_ВЕРИФІКАЦІЇ" /> -->
+
+    <!-- 1. Foundation CSS (з CDN) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.5/dist/css/foundation.min.css" crossorigin="anonymous">
+    
+    <!-- 2. Ваші власні стилі -->
+    <link rel="stylesheet" href="assets/css/style.css"> <!-- Або просто style.css, якщо в корені -->
+
+</head>
+<body>
+    <header class="top-bar" role="banner">
+        <div class="top-bar-left">
+            <ul class="menu">
+                <li class="menu-text site-title"><a href="index.html" style="color: inherit; text-decoration: none;">Мій Блог</a></li>
+            </ul>
+        </div>
+        <nav class="top-bar-right" aria-label="Головна навігація сайту">
+            <ul class="menu">
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="about.html" aria-current="page">Про мене</a></li> <!-- aria-current для поточної сторінки -->
+            </ul>
+        </nav>
+    </header>
+
+    <div class="grid-container" style="margin-top: 20px; margin-bottom: 20px;">
+        <main class="grid-x grid-margin-x" role="main">
+            <div class="cell small-12 medium-10 large-8 medium-offset-1 large-offset-2">
+                <article class="page-content"> <!-- Використовуємо загальний клас для сторінок, або <section> -->
+                    <h1>Про мене</h1>
+                    
+                    <figure style="float: left; margin-right: 20px; margin-bottom: 10px; max-width: 250px;">
+                        <picture>
+                            <source srcset="assets/images/alina-sedlinska.webp" type="image/webp">
+                            <source srcset="assets/images/alina-sedlinska.jpg" type="image/jpeg">
+                            <img src="assets/images/alina-sedlinska.jpg" alt="Фото Аліни Седлінської, авторки блогу" style="width:100%; height:auto; border-radius: 50%;">
+                        </picture>
+                        <figcaption style="font-size:0.9em; color:#777; text-align:center; margin-top:0.5em;">Аліна Седлінська</figcaption>
+                    </figure>
+
+                    <p>Привіт! Мене звати Аліна Седлінська, і я рада вітати вас у своєму блозі. Я студентка, захоплююся веб-розробкою, сучасними технологіями та люблю ділитися своїми знаннями та відкриттями.</p>
+                    <p>Цей блог – це місце, де я планую писати про:
+                        <ul>
+                            <li>Цікавинки зі світу програмування та веб-дизайну.</li>
+                            <li>Мої експерименти з Foundation, SASS та іншими інструментами.</li>
+                            <li>Враження від подорожей та нових місць.</li>
+                            <li>Можливо, трохи про кулінарію та інші хобі.</li>
+                        </ul>
+                    </p>
+                    <p>Я завжди відкрита до спілкування, тож не соромтеся залишати коментарі або зв'язуватися зі мною через [посилання на соціальні мережі або контактну форму, якщо буде].</p>
+                    
+                    <h2>Мої навички та інтереси</h2>
+                    <ul class="no-bullet"> <!-- Foundation клас для списку без маркерів -->
+                        <li><strong>Веб-розробка:</strong> HTML, CSS, JavaScript, SASS, Foundation</li>
+                        <li><strong>Мови програмування:</strong> [Вкажіть мови, якщо є]</li>
+                        <li><strong>Інструменти:</strong> Git, VS Code, MAMP</li>
+                        <li><strong>Інтереси:</strong> Подорожі, фотографія, читання, нові технології</li>
+                    </ul>
+                    <div style="clear:both;"></div> <!-- Для очищення float, якщо зображення зліва -->
+                </article>
+            </div>
+        </main>
+    </div>
+
+    <footer class="grid-container" role="contentinfo" style="background-color: #333; color: white; padding: 20px 0;">
+        <div class="grid-x">
+            <div class="cell small-12 text-center">
+                <p>© 2025 Седлінська Аліна</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/what-input@5.2.10/dist/what-input.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.5/dist/js/foundation.min.js" crossorigin="anonymous"></script>
+    <script>
+      $(document).foundation();
+    </script>
+
+</body>
+</html>
