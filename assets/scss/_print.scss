@@ -1,0 +1,123 @@
+@media print {
+  body {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    font-size: 12pt;
+    line-height: 1.4;
+    color: #000;
+    background-color: #fff !important;
+    margin: 1in;
+    -webkit-print-color-adjust: exact !important; /* Для старих Chrome, Safari */
+    print-color-adjust: exact !important;         /* Стандартна властивість */
+  }
+
+  .top-bar,
+  nav.top-bar-right,
+  aside[role="complementary"],
+  footer[role="contentinfo"],
+  .callout .button,
+  .blog-post .button,
+  #sidebar-heading,
+  script,
+  .some-social-buttons,
+  .advertisement-block {
+    display: none !important;
+  }
+
+  .grid-container {
+    max-width: 100% !important;
+    width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  main[role="main"],
+  .blog-post {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    box-shadow: none !important;
+  }
+  
+  .cell.small-12.medium-10.large-8.medium-offset-1.large-offset-2,
+  .cell.small-12.medium-8.large-9 {
+     width: 100% !important;
+     max-width: 100% !important;
+     flex-basis: 100% !important;
+     margin: 0 !important;
+     padding: 0 !important;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: #000 !important;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+    page-break-after: avoid;
+  }
+
+  h1.blog-post-title {
+    font-size: 24pt;
+    text-align: center;
+    margin-bottom: 1em;
+  }
+
+  p {
+    orphans: 3;
+    widows: 3;
+    text-align: justify;
+  }
+
+  a {
+    color: #000 !important;
+    text-decoration: underline !important;
+    &[href^="http"]:after,
+    &[href^="https"]:after {
+      content: " (" attr(href) ")"; 
+      font-size: 0.8em;
+      color: #555;
+    }
+    &[href^="#"]:after,
+    &[href^="/"]:after,
+    .button:after {
+      content: "";
+    }
+  }
+  
+  img, picture {
+    max-width: 100% !important;
+    height: auto !important;
+    display: block;
+    margin: 1em auto;
+    page-break-inside: avoid;
+  }
+  
+  figure figcaption {
+      color: #333 !important;
+      font-style: italic;
+  }
+
+  blockquote {
+    border-left: 3px solid #ccc !important;
+    padding-left: 1em !important;
+    margin-left: 0 !important;
+    font-style: italic;
+    page-break-inside: avoid;
+  }
+
+  .callout.primary, .callout.secondary {
+      background-color: transparent !important;
+      border: 1px solid #ccc !important;
+      color: #000 !important;
+      h3 a {
+          color: #000 !important;
+      }
+  }
+
+  .grid-container[style] {
+      margin-top: 0 !important;
+      margin-bottom: 0 !important;
+      background-color: transparent !important;
+      padding: 0 !important;
+  }
+}
